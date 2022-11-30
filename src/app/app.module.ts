@@ -7,11 +7,13 @@ import { HelloComponent } from './hello.component';
 import { HomeComponent } from './home/home.component';
 import { RouterModule } from '@angular/router';
 import { CoinComponent } from './coin/coin.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
 
   imports:      [ 
     BrowserModule, 
+    HttpClientModule,
     FormsModule, 
     RouterModule.forRoot([
     { path: '', component: HomeComponent },
