@@ -1,4 +1,5 @@
 <h2>Acompanhe aqui o valor do bitcoin em Dolar</h2>
 
-
-<p>{{this.getCurrentPrice}}</p>
+<div *ngIf="getCurrentPrice()">
+  <div>{{ this.getCurrentPrice().time.updated }}</div>
+<div>

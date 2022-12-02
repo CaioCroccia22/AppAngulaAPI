@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { RouterModule } from '@angular/router';
 import { CoinComponent } from './coin/coin.component';
 import { HttpClientModule } from '@angular/common/http';
+import { BitcoinService } from './bitcoin.service';
 
 @NgModule({
 
@@ -21,6 +22,7 @@ import { HttpClientModule } from '@angular/common/http';
   ]),
 ],
   declarations: [ AppComponent, HelloComponent, HomeComponent, CoinComponent ],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ],
+  providers: [BitcoinService]
 })
 export class AppModule { }
