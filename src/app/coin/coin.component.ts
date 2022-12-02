@@ -21,6 +21,8 @@ export class CoinComponent implements OnInit {
 
 
   getCurrentPrice(){
-    this.bitcoinService.currentPrice;
+    return this.bitcoinService.currentPrice;
   }
+
+
 }
