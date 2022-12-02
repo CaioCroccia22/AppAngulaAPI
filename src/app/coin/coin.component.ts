@@ -10,15 +10,6 @@ export class CoinComponent implements OnInit {
 
   constructor(private bitcoinService: BitcoinService) { }
 
-  ngOnInit() {
-    this.bitcoinService.getCoin().subscribe(
-      (data) => {
-          console.log(data);
-      },
-      (error) => {
-        console.log(error);
-      }
-    );
-  }
+  ngOnInit() {}
 
 }
