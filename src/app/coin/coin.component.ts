@@ -8,8 +8,14 @@ import { BitcoinService } from '../bitcoin.service';
 })
 export class CoinComponent implements OnInit {
 
-  constructor(private bitcoinService: BitcoinService) { }
+  constructor(public bitcoinService: BitcoinService) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+   this.update;
+  }
 
+
+  update(){
+    this.bitcoinService.update;
+  }
 }
