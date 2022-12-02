@@ -1,5 +1,12 @@
 <h2>Acompanhe aqui o valor do bitcoin em Dolar</h2>
-
+<hr />
+<div>
+  <input type="button" value="Atualizar" (click)="update()" />
+  <span
+    >Atualizado em {{ this.bitcoinService.lastUpdate | date: 'full' }}</span
+  >
+</div>
+<hr />
 <div *ngIf="getCurrentPrice()">
-  <div>{{ this.getCurrentPrice().time.update }}</div>
+
 <div>

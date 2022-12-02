@@ -11,18 +11,20 @@ export class CoinComponent implements OnInit {
   constructor(public bitcoinService: BitcoinService) { }
 
   ngOnInit() {
-   this.update;
+   this.update();
   }
 
 
   update(){
-    this.bitcoinService.update;
+    this.bitcoinService.update();
   }
 
 
   getCurrentPrice(){
     return this.bitcoinService.currentPrice;
   }
+
+  
 
 
 }
